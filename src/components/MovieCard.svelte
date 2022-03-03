@@ -4,7 +4,7 @@
 
 <div class="movie-card">
     <a href={`/movie/${movie.id}`}>
-        <img src="{'https://image.tmdb.org/t/p/w500' + movie.poster_path}" alt="{movie.title}">
+        <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="{movie.title}">
     </a>
     <div class="desc">
         <h2>{movie.title}</h2>
@@ -20,15 +20,14 @@
     }
 
     h2 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     
     .desc {
         height: 5vh;
     }
-
     p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .movie-card {
@@ -36,5 +35,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding: 1rem;
+        align-items: center;
+        text-align: center;
     }
 </style>

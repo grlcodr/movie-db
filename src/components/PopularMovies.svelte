@@ -13,6 +13,9 @@
 <style>
     h3 {
         padding: 1rem 0;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem;
     }
     .popular-movies {
         display: grid;
